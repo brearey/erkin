@@ -9,7 +9,8 @@
     <!-- Шрифты -->
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Tinos&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hero.css">
 </head>
 <body>
     <!-- Шапка -->
@@ -25,6 +26,7 @@
         <p class="hero-subtitle">Путеводитель по быраанам долины Эркээни</p>
         
         <div class="nav">
+            <a href="#maps" class="btn">Карта</a>
             <a href="/o-proekte/" class="btn">О проекте</a>
             <a href="/galereya/" class="btn">Галерея</a>
             <a href="/o-byraanah/" class="btn">О сопках</a>
@@ -34,7 +36,7 @@
     <!-- Основной контент -->
     <section class="content">
         <div class="container">
-            <div class="map-container">
+            <div class="map-container" id="maps">
                 <!-- Яндекс.Карта -->
                 <div style="position:relative;overflow:hidden;">
                   <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">
