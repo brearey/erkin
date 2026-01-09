@@ -1,0 +1,93 @@
+/* Секция "О проекте" */
+.about {
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+
+/* Обёртка для видео */
+.about-video-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.about-video-wrapper iframe {
+    width: 100%;
+    height: 405px;
+    border: none;
+    aspect-ratio: 16 / 9;
+}
+
+/* Обёртка для текста и фото */
+.about-text-wrapper {
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.about-text-wrapper p {
+    margin-bottom: 20px;
+}
+
+/* Изображения краеведов */
+.about-img-1,
+.about-img-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin: 30px 0;
+}
+
+.about-img-1 img,
+.about-img-2 img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-img-1 span,
+.about-img-2 span {
+    color: #555;
+    font-style: italic;
+    text-align: center;
+    max-width: 600px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .about {
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .about-video-wrapper iframe {
+        height: 300px;
+    }
+
+    .about-text-wrapper {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-text-wrapper {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .about-img-1 span,
+    .about-img-2 span {
+        max-width: 100%;
+        width: 100%;
+        font-size: 16px;
+    }
+}

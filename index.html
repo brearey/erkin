@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
     <!-- Шапка -->
@@ -36,7 +37,22 @@
     <!-- Основной контент -->
     <section class="content">
         <div class="container">
-            <div class="map-container" id="maps">
+            <div class="legend" id="maps">
+                <h3>Легенда карты</h3>
+                <div class="legend-item">
+                    <div class="color-box red"></div>
+                    <span><strong>Красный</strong> - священные места, запрещённые для посещения</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box orange"></div>
+                    <span><strong>Оранжевый</strong> - природоохранные зоны (посещение ограничено с апреля по октябрь)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box green"></div>
+                    <span><strong>Зелёный</strong> - разрешённые для посещения места</span>
+                </div>
+            </div>
+            <div class="map-container">
                 <!-- Яндекс.Карта -->
                 <div style="position:relative;overflow:hidden;">
                   <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">
@@ -56,27 +72,30 @@
                 <p>На некоторых быраанах сохранилась уникальная экосистема, растут растения и обитают птицы, занесённые в Красную книгу. Эти места на карте обозначены <span style="color:#ff8900; font-weight: bold;">оранжевым цветом</span>, не рекомендуется посещать в период гнездования и вегетации (с апреля по октябрь).</p>
                 <p><span style="color:#00c915; font-weight: bold;">Зелёным цветом</span> отмечены места, где можно находиться. Относитесь с уважением к священным местам и берегите природу!</p>
             </div>
-            
-            <div class="legend">
-                <h3>Легенда карты</h3>
-                <div class="legend-item">
-                    <div class="color-box red"></div>
-                    <span><strong>Красный</strong> - священные места, запрещённые для посещения</span>
-                </div>
-                <div class="legend-item">
-                    <div class="color-box orange"></div>
-                    <span><strong>Оранжевый</strong> - природоохранные зоны (посещение ограничено с апреля по октябрь)</span>
-                </div>
-                <div class="legend-item">
-                    <div class="color-box green"></div>
-                    <span><strong>Зелёный</strong> - разрешённые для посещения места</span>
-                </div>
-            </div>
         </div>
-    </section>
-
-    <section class="about" id="about">
-      <iframe width="720" height="405" src="https://rutube.ru/play/embed/428fa9468f3a4ae44435688669a0b284"  allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      </section>
+      
+      <section class="container about" id="about">
+        <div class="about-video-wrapper">
+          <iframe width="720" height="405" src="https://rutube.ru/play/embed/428fa9468f3a4ae44435688669a0b284"  allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+      <div class="about-text-wrapper">
+        <p>Жители Хангаласского улуса называют сопки, образующие границы долины Эркээни, словом «быраан». Каждая из сопок имеет своё название, связанное с историей долины.</p>
+        <p>Проект «Эркин» представляет собой сайт-путеводитель с картой быраанов, дополненной топонимическими и историческими справками из книжных источников: толковых словарей якутского языка, работ известного якутского топонимиста Багдарыына Сюлбэ, а также на основе информации консультантов — краеведов Хангаласского улуса Прокопия Романовича Ноговицына, Петра Саввича Федотова и Николая Николаевича Трофимова.</p>
+        <div class="about-img-1">
+          <img src="img/trofimov.jpg" alt="">
+          <span>Николай Николаевич Трофимов, житель села Улах-Ан</span>
+        </div>
+        <div class="about-img-2">
+          <img src="img/fedotov.jpg" alt="">
+          <span>Пётр Саввич Федотов, учитель Октемской средней школы, краевед</span>
+        </div>
+        <div class="about-img-2">
+          <img src="img/nogovicyn.jpg" alt="">
+          <span>Прокопий Романович Ноговицын, руководитель экспедиции школьников «Эллада» (в центре)</span>
+        </div>
+        <p>Проект создан Романом Протодьяконовым, учеником 10-го класса Октемского НОЦ им. М. Е. Николаева.</p>
+      </div>
     </section>
     
     <!-- Футер -->
