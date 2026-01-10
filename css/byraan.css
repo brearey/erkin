@@ -1,0 +1,28 @@
+/* Секция "Быраан" */
+.byraan {
+    padding: 60px 0;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.byraan-title {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.byraan div {
+  padding: 0 15px;
+}
+
+.byraan a {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .byraan {
+        padding: 0 15px;
+        font-size: 16px;
+    }
+}
