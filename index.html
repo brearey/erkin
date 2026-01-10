@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/byraan.css">
+    <link rel="stylesheet" href="css/gallery.css">
       <script src="script/byraan.js"></script>
+      <script src="script/gallery.js"></script>
   </head>
   <body>
     <!-- Герой-секция -->
@@ -28,7 +30,7 @@
         <a href="#maps" class="btn">Карта</a>
         <a href="#about" class="btn">О проекте</a>
         <a href="#byraan" class="btn">О сопках</a>
-        <a href="#" class="btn">Галерея</a>
+        <a href="#gallery" class="btn">Галерея</a>
       </div>
     </section>
 
@@ -391,14 +393,19 @@
         </div>
     </section>
 
+    <h2 id="gallery">Фотогалерея</h2>
     <section class="gallery">
-        <div><img src="img/slider/1.webp" alt=""></div>
-        <div><img src="img/slider/2.webp" alt=""></div>
-        <div><img src="img/slider/3.1.webp" alt=""></div>
-        <div><img src="img/slider/4.webp" alt=""></div>
-        <div><img src="img/slider/4.1.webp" alt=""></div>
-        <div><img src="img/slider/5.1.webp" alt=""></div>
-        <div><img src="img/slider/5.2.webp" alt=""></div>
+        <div class="slides">
+            <div class="slide active"><img src="img/slider/1.webp" alt=""></div>
+            <div class="slide"><img src="img/slider/2.webp" alt=""></div>
+            <div class="slide"><img src="img/slider/3.1.webp" alt=""></div>
+            <div class="slide"><img src="img/slider/4.webp" alt=""></div>
+            <div class="slide"><img src="img/slider/4.1.webp" alt=""></div>
+            <div class="slide"><img src="img/slider/5.1.webp" alt=""></div>
+            <div class="slide"><img src="img/slider/5.2.webp" alt=""></div>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
     </section>
 
     <!-- Футер -->
