@@ -2,27 +2,66 @@
 .byraan {
     padding: 60px 0;
     font-size: 18px;
-    text-align: justify;
     margin-bottom: 20px;
 }
 
-.byraan-title {
-  text-align: center;
-  margin: 20px 0;
-  font-weight: bold;
+.byraan-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-.byraan div {
-  padding: 0 15px;
+.byraan-title {
+    width: 100%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: none;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.byraan-title:hover {
+    background-color: #eaeaea;
+}
+
+.byraan-title i {
+    transition: transform 0.3s;
+}
+
+.byraan-title.active i {
+    transform: rotate(180deg);
+}
+
+.byraan-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s;
+    text-align: justify;
+}
+
+.byraan-content.open {
+    max-height: 1000px; /* Достаточно большое значение для анимации */
 }
 
 .byraan a {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
     .byraan {
         padding: 0 15px;
         font-size: 16px;
+    }
+    .byraan-title {
+        font-size: 18px;
+        padding: 15px;
     }
 }
