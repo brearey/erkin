@@ -1,107 +1,150 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <title>Эркин - Путеводитель по быраанам долины Эркээни</title>
-    
+
     <!-- Шрифты -->
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Tinos&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Tinos&family=Roboto&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/about.css">
-</head>
-<body>
+  </head>
+  <body>
     <!-- Герой-секция -->
     <section class="hero">
-        <h1 class="hero-title">Эркин</h1>
-        <p class="hero-subtitle">Путеводитель по быраанам долины Эркээни</p>
-        
-        <div class="nav">
-            <a href="#maps" class="btn">Карта</a>
-            <a href="#about" class="btn">О проекте</a>
-            <a href="#" class="btn">Галерея</a>
-            <a href="#" class="btn">О сопках</a>
-        </div>
+      <h1 class="hero-title">Эркин</h1>
+      <p class="hero-subtitle">Путеводитель по быраанам долины Эркээни</p>
+
+      <div class="nav">
+        <a href="#maps" class="btn">Карта</a>
+        <a href="#about" class="btn">О проекте</a>
+        <a href="#" class="btn">Галерея</a>
+        <a href="#" class="btn">О сопках</a>
+      </div>
     </section>
-    
+
     <!-- Основной контент -->
     <section class="content">
-        <div class="container">
-          <h2>Интерактивная карта</h2>
-            <div class="legend" id="maps">
-                <h3>Легенда карты</h3>
-                <div class="legend-item">
-                    <div class="color-box red"></div>
-                    <span><strong>Красный</strong> - священные места, запрещённые для посещения</span>
-                </div>
-                <div class="legend-item">
-                    <div class="color-box orange"></div>
-                    <span><strong>Оранжевый</strong> - природоохранные зоны (посещение ограничено с апреля по октябрь)</span>
-                </div>
-                <div class="legend-item">
-                    <div class="color-box green"></div>
-                    <span><strong>Зелёный</strong> - разрешённые для посещения места</span>
-                </div>
-            </div>
-            <div class="map-container">
-                <!-- Яндекс.Карта -->
-                <div style="position:relative;overflow:hidden;">
-                  <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">
-                    Яндекс Карты
-                  </a>
-                  <a href="https://yandex.ru/maps/?l=sat%2Cskl&ll=129.625333%2C61.673576&mode=usermaps&source=constructorLink&um=constructor%3Ab03d53eb5a2fde20a17fe06f54483bde0ce6a62376e0da65745746f9691ef5f1&utm_medium=mapframe&utm_source=maps&z=10" style="color:#eee;font-size:12px;position:absolute;top:14px;">
-                    Яндекс Карты — транспорт, навигация, поиск мест
-                  </a>
-                  <iframe src="https://yandex.ru/map-widget/v1/?l=sat%2Cskl&ll=129.357872%2C61.687635&mode=usermaps&source=constructorLink&um=constructor%3Ab03d53eb5a2fde20a17fe06f54483bde0ce6a62376e0da65745746f9691ef5f1&z=13" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-                </div>
-            </div>
-            
-            <div class="text-block">
-                <p><strong>Дорогие путешественники!</strong></p>
-                <p>"Эркин" приглашает вас открыть для себя уникальный мир хранителей долины Эркээни - сопок-быраан. Каждая из них сокрывает тайну и окутана древними преданиями. Наша интерактивная карта поможет вам узнать названия сопок, их историю и выбрать свой маршрут к свидетелям тысячелетий.</p>
-                <p>Просим помнить, что на протяжении веков бырааны почитались жителями долины Эркээни как священные места. На быраанах похоронены прародители хангаласских родов и великие шаманы. Верования народа саха запрещают тревожить такие места. Эти бырааны отмечены <span style="color:#fb0000; font-weight: bold;">красным цветом</span>.</p>
-                <p>На некоторых быраанах сохранилась уникальная экосистема, растут растения и обитают птицы, занесённые в Красную книгу. Эти места на карте обозначены <span style="color:#ff8900; font-weight: bold;">оранжевым цветом</span>, не рекомендуется посещать в период гнездования и вегетации (с апреля по октябрь).</p>
-                <p><span style="color:#00c915; font-weight: bold;">Зелёным цветом</span> отмечены места, где можно находиться. Относитесь с уважением к священным местам и берегите природу!</p>
-            </div>
+      <div class="container">
+        <h2>Интерактивная карта</h2>
+        <div class="legend" id="maps">
+          <h3>Легенда карты</h3>
+          <div class="legend-item">
+            <div class="color-box red"></div>
+            <span><strong>Красный</strong> - священные места, запрещённые для
+              посещения</span>
+          </div>
+          <div class="legend-item">
+            <div class="color-box orange"></div>
+            <span><strong>Оранжевый</strong> - природоохранные зоны (посещение
+              ограничено с апреля по октябрь)</span>
+          </div>
+          <div class="legend-item">
+            <div class="color-box green"></div>
+            <span><strong>Зелёный</strong> - разрешённые для посещения
+              места</span>
+          </div>
         </div>
-      </section>
-      
-      <section class="container about" id="about">
-        <h2>О проекте</h2>
-        <div class="about-video-wrapper">
-          <iframe width="720" height="405" src="https://rutube.ru/play/embed/428fa9468f3a4ae44435688669a0b284"  allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        <div class="map-container">
+          <!-- Яндекс.Карта -->
+          <div style="position:relative;overflow:hidden;">
+            <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+              style="color:#eee;font-size:12px;position:absolute;top:0px;">
+              Яндекс Карты
+            </a>
+            <a
+              href="https://yandex.ru/maps/?l=sat%2Cskl&ll=129.625333%2C61.673576&mode=usermaps&source=constructorLink&um=constructor%3Ab03d53eb5a2fde20a17fe06f54483bde0ce6a62376e0da65745746f9691ef5f1&utm_medium=mapframe&utm_source=maps&z=10"
+              style="color:#eee;font-size:12px;position:absolute;top:14px;">
+              Яндекс Карты — транспорт, навигация, поиск мест
+            </a>
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?l=sat%2Cskl&ll=129.357872%2C61.687635&mode=usermaps&source=constructorLink&um=constructor%3Ab03d53eb5a2fde20a17fe06f54483bde0ce6a62376e0da65745746f9691ef5f1&z=13"
+              width="560" height="400" frameborder="1" allowfullscreen="true"
+              style="position:relative;"></iframe>
+          </div>
         </div>
+
+        <div class="text-block">
+          <p><strong>Дорогие путешественники!</strong></p>
+          <p>"Эркин" приглашает вас открыть для себя уникальный мир хранителей
+            долины Эркээни - сопок-быраан. Каждая из них сокрывает тайну и
+            окутана древними преданиями. Наша интерактивная карта поможет вам
+            узнать названия сопок, их историю и выбрать свой маршрут к
+            свидетелям тысячелетий.</p>
+          <p>Просим помнить, что на протяжении веков бырааны почитались жителями
+            долины Эркээни как священные места. На быраанах похоронены
+            прародители хангаласских родов и великие шаманы. Верования народа
+            саха запрещают тревожить такие места. Эти бырааны отмечены <span
+              style="color:#fb0000; font-weight: bold;">красным
+              цветом</span>.</p>
+          <p>На некоторых быраанах сохранилась уникальная экосистема, растут
+            растения и обитают птицы, занесённые в Красную книгу. Эти места на
+            карте обозначены <span
+              style="color:#ff8900; font-weight: bold;">оранжевым цветом</span>,
+            не рекомендуется посещать в период гнездования и вегетации (с апреля
+            по октябрь).</p>
+          <p><span style="color:#00c915; font-weight: bold;">Зелёным
+              цветом</span> отмечены места, где можно находиться. Относитесь с
+            уважением к священным местам и берегите природу!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container about" id="about">
+      <h2>О проекте</h2>
+      <div class="about-video-wrapper">
+        <iframe width="720" height="405"
+          src="https://rutube.ru/play/embed/428fa9468f3a4ae44435688669a0b284"
+          allow="clipboard-write; autoplay" webkitAllowFullScreen
+          mozallowfullscreen allowFullScreen></iframe>
+      </div>
       <div class="about-text-wrapper">
-        <p>Жители Хангаласского улуса называют сопки, образующие границы долины Эркээни, словом «быраан». Каждая из сопок имеет своё название, связанное с историей долины.</p>
-        <p>Проект «Эркин» представляет собой сайт-путеводитель с картой быраанов, дополненной топонимическими и историческими справками из книжных источников: толковых словарей якутского языка, работ известного якутского топонимиста Багдарыына Сюлбэ, а также на основе информации консультантов — краеведов Хангаласского улуса Прокопия Романовича Ноговицына, Петра Саввича Федотова и Николая Николаевича Трофимова.</p>
+        <p>Жители Хангаласского улуса называют сопки, образующие границы долины
+          Эркээни, словом «быраан». Каждая из сопок имеет своё название,
+          связанное с историей долины.</p>
+        <p>Проект «Эркин» представляет собой сайт-путеводитель с картой
+          быраанов, дополненной топонимическими и историческими справками из
+          книжных источников: толковых словарей якутского языка, работ
+          известного якутского топонимиста Багдарыына Сюлбэ, а также на основе
+          информации консультантов — краеведов Хангаласского улуса Прокопия
+          Романовича Ноговицына, Петра Саввича Федотова и Николая Николаевича
+          Трофимова.</p>
         <div class="about-img-1">
-          <img src="img/trofimov.jpg" alt="">
+          <img src="img/trofimov.jpg" alt>
           <span>Николай Николаевич Трофимов, житель села Улах-Ан</span>
         </div>
         <div class="about-img-2">
-          <img src="img/fedotov.jpg" alt="">
-          <span>Пётр Саввич Федотов, учитель Октемской средней школы, краевед</span>
+          <img src="img/fedotov.jpg" alt>
+          <span>Пётр Саввич Федотов, учитель Октемской средней школы,
+            краевед</span>
         </div>
         <div class="about-img-2">
-          <img src="img/nogovicyn.jpg" alt="">
-          <span>Прокопий Романович Ноговицын, руководитель экспедиции школьников «Эллада» (в центре)</span>
+          <img src="img/nogovicyn.jpg" alt>
+          <span>Прокопий Романович Ноговицын, руководитель экспедиции школьников
+            «Эллада» (в центре)</span>
         </div>
-        <p>Проект создан Романом Протодьяконовым, учеником 10-го класса Октемского НОЦ им. М. Е. Николаева.</p>
+        <p>Проект создан Романом Протодьяконовым, учеником 10-го класса
+          Октемского НОЦ им. М. Е. Николаева.</p>
       </div>
     </section>
-    
+
     <!-- Футер -->
     <footer class="footer">
-        <div class="container">
-            <p><a href="https://hu-onoc.obr.sakha.gov.ru" target="_blank">МБНОУ «Октемский НОЦ им. М.Е. Николаева». 2025-2026 г.</a></p>
-            <p>***</p>
-            <p>Республиканская научная конференция-конкурс</p>
-            <p>молодых исследователей имени академика В.П. Ларионова</p>
-            <p>“Инникигэ хардыы”</p>
-        </div>
+      <div class="container">
+        <p><a href="https://hu-onoc.obr.sakha.gov.ru" target="_blank">МБНОУ
+            «Октемский НОЦ им. М.Е. Николаева». 2025-2026 г.</a></p>
+        <p>***</p>
+        <p>Республиканская научная конференция-конкурс</p>
+        <p>молодых исследователей имени академика В.П. Ларионова</p>
+        <p>“Инникигэ хардыы”</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
