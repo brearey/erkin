@@ -21,6 +21,7 @@
     <script src="script/gallery.js"></script>
 </head>
 <body>
+<h1 id="geo">GEO</h1>
 <!-- Герой-секция -->
 <section class="hero">
     <h1 class="hero-title">Эркин</h1>
@@ -524,5 +525,31 @@
         <p>“Инникигэ хардыы”</p>
     </div>
 </footer>
+<script>
+navigator.geolocation.getCurrentPosition(function(position) {
+  const geo = document.getElementById('geo')
+  geo.innerHTML = `${position.coords.latitude} ${position.coords.longitude}`
+  console.log(position.coords.latitude, position.coords.longitude); // выводит координаты местоположения пользователя
+}, function(error) {
+  switch (error.code) {
+    case error.PERMISSION_DENIED:
+      console.log("User denied the request for Geolocation.");
+      geo.innerHTML = "User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      console.log("Location information is unavailable.");
+      geo.innerHTML = "Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      console.log("The request to get user location timed out.");
+      geo.innerHTML = "The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      console.log("An unknown error occurred.");
+      geo.innerHTML = "An unknown error occurred."
+      break;
+  }
+});
+</script>
 </body>
 </html>
